@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Introduction - KPN Open Source</title>
+
+  <!-- Page description -->
+  
+    <meta name="description" content="KPN open source website" />
+  
+
+  <!-- Redirect -->
+  
+    <link rel="canonical" href="https://kpn.github.io/" />
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <style type="text/css">
+  @font-face {
+    font-family: kpn-metric;
+    font-style: normal;
+    font-weight: 300;
+    src: url('css/kpn-metric-light.eot');
+    src: url('css/kpn-metric-light.eot?#iefix')
+        format("embedded-opentype"),
+      url('css/kpn-metric-light.wof') format("woff"),
+      url('css/kpn-metric-light.ttf') format("truetype"),
+      url('css/kpn-metric-light.svg#kpn-metric') format("svg");
+  }
+  @font-face {
+    font-family: kpn-metric;
+    font-style: normal;
+    font-weight: 400;
+    src: url('css/kpn-metric-normal.eot');
+    src: url('css/kpn-metric-normal.eot?#iefix')
+        format("embedded-opentype"),
+      url('css/kpn-metric-normal.woff') format("woff"),
+      url('css/kpn-metric-normal.ttf') format("truetype"),
+      url('css/kpn-metric-normal.svg#kpn-metric') format("svg");
+  }
+  @font-face {
+    font-family: kpn-metric;
+    font-style: normal;
+    font-weight: 700;
+    src: url('css/kpn-metric-bold.eot');
+    src: url('css/kpn-metric-bold.eot?#iefix')
+        format("embedded-opentype"),
+      url('css/kpn-metric-bold.woff') format("woff"),
+      url('css/kpn-metric-bold.ttf') format("truetype"),
+      url('css/kpn-metric-bold.svg#kpn-metric') format("svg");
+  }
+  @font-face {
+    font-family: kpn-ui-icons;
+    font-style: normal;
+    font-weight: 400;
+    src: url('css/kpn-ui-icons.eot');
+    src: url('css/kpn-ui-icons.eot?#iefix')
+        format("embedded-opentype"),
+      url('css/kpn-ui-icons.woff') format("woff"),
+      url('css/kpn-ui-icons.ttf') format("truetype"),
+      url('css/kpn-ui-icons.svg#kpn-ui-icons') format("svg");
+  }
+  @font-face {
+    font-family: kpn-service-icons;
+    font-style: normal;
+    font-weight: 400;
+    src: url('css/kpn-service-icons.eot');
+    src: url('css/kpn-service-icons.eot?#iefix')
+        format("embedded-opentype"),
+      url('css/kpn-service-icons.woff') format("woff"),
+      url('css/kpn-service-icons.ttf') format("truetype"),
+      url('css/kpn-service-icons.svg#kpn-service-icons')
+        format("svg");
+  }
+  </style>
+
+  <link rel="stylesheet" href="css/bundle.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/codehilite.css">
+
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body class="app-body">
+  <!-- KPN STYLE Beginning -->
+
+  <div class="app-layout">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="img/logo-kpn.png" />
+      </a>
+      <div class="top-bar__title">KPN Open Source</div>
+      <ul class="top-bar__menu">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+        <!-- SEARCH IS DISABLED UNTIL WE HAVE AN IMPLEMENTATION -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search" />
+              </form>
+            </span >
+          </li>
+        <!--
+          Support repo URL
+        -->
+
+        <li class="top-bar__item">
+          
+            <a class="top-bar__link repo-link"
+            href="https://github.com/Woile/kpn.github.io/" target="_blank" rel="noopener noreferrer"">
+              <img height="25" alt="kpn/kpn.github.io" src="img/git-icon-black.png" />
+            </a>
+          
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">KPN Open Source</a>
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+          <!--
+
+-->
+
+<li>
+  <a href="." class="side-bar__link side-bar__link--active">
+    Introduction
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar">
+        <div class="title-bar__title">Introduction</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs">
+        <h4>Table of contents</h4>
+        <ul>
+        
+            <li><a class="a" href="#kpn-public-github-pages">KPN Public GitHub pages</a></li>
+            
+                <li class="child-li"><a class="a child" href="#work-in-progress">Work in progress</a></li>
+            
+                <li class="child-li"><a class="a child" href="#contributing-to-these-pages">Contributing to these pages</a></li>
+            
+                <li class="child-li"><a class="a child" href="#license">LICENSE</a></li>
+            
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          
+            <h1 id="kpn-public-github-pages">KPN Public GitHub pages<a class="headerlink" href="#kpn-public-github-pages" title="Permanent link">&para;</a></h1>
+<p>The KPN GitHub pages are a portal to expose and document open source projects that are maintained by KPN.
+You can access these pages on https://kpn.github.io/.</p>
+<h2 id="work-in-progress">Work in progress<a class="headerlink" href="#work-in-progress" title="Permanent link">&para;</a></h2>
+<p>These pages are still work in progress but they should soon be up and running</p>
+<h2 id="contributing-to-these-pages">Contributing to these pages<a class="headerlink" href="#contributing-to-these-pages" title="Permanent link">&para;</a></h2>
+<p>These pages are generated using <a href="https://jekyllrb.com/">Jekyll</a> as preferred by <a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">GitHub</a>.
+Anybody is free to contribute and improve these pages by creating a pull request to this repository.</p>
+<h3 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://help.github.com/articles/fork-a-repo/">Fork this project</a> to your account.</li>
+<li><a href="https://help.github.com/articles/creating-and-deleting-branches-within-your-repository">Create a branch</a> for the change you intend to make.</li>
+<li>Make your changes to your fork.</li>
+<li><a href="https://help.github.com/articles/using-pull-requests/">Send a pull request</a> from your fork’s branch to the <code>master</code> branch of this project.</li>
+</ol>
+<h3 id="adding-new-projects">Adding new projects<a class="headerlink" href="#adding-new-projects" title="Permanent link">&para;</a></h3>
+<p>New open source projects should always be added to these pages.</p>
+<h3 id="testing-locally">Testing locally<a class="headerlink" href="#testing-locally" title="Permanent link">&para;</a></h3>
+<p>You can test your changes locally by running a development server::</p>
+<div class="codehilite"><pre><span></span><code>$ jekyll serve --livereload
+</code></pre></div>
+
+
+<h2 id="license">LICENSE<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
+<p>Copyright 2018 KPN N.V.</p>
+<p>Licensed under the Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0</p>
+          
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.1.2
+  Docs Build Date UTC : 2020-09-10 19:09:15.881981+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    . beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="js/theme.js"></script>
+  <script src="js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="search/main.js"></script>
+  
+</body>
+</html>
